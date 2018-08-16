@@ -1,5 +1,5 @@
 export class greetingController {
-    constructor() {
+    constructor(imageService) {
         'ngInject';
         console.log('in greeting controller!');
     }

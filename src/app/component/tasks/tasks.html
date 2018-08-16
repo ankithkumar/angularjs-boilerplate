@@ -1,1 +1,13 @@
-<p>Bunch of tasks</p>
+<p>Here Are the List Of Images</p>
+
+<div ng-if="$ctrl.imageList.length === 0">
+    No Images present
+</div>
+
+<div ng-if="$ctrl.imageList.length !== 0">
+    <div ng-repeat="imageUrl in $ctrl.imageList track by $index">
+        <div class="image">
+            <img ng-src="{{imageUrl}}"/>
+        </div>
+    </div>
+</div>

@@ -1,5 +1,7 @@
-//import {greetingController} from './greeting-controller';
+import {tasksController} from './tasks.controller';
+import './tasks.scss';
 
 export const tasksComponent = {    
-        template: require('./tasks.html')
+        template: require('./tasks.html'),
+        controller: tasksController
     };
